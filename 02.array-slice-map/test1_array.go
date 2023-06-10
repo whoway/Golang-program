@@ -6,7 +6,7 @@ import (
 
 func printArray(myArray [4]int) {
 	//值拷贝
-
+	//【最坑的地方】go的数组也是值拷贝！！和cpp不一样！！
 	for index, value := range myArray {
 		fmt.Println("index = ", index, ", value = ", value)
 	}
